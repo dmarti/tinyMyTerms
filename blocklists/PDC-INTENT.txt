@@ -1,0 +1,11 @@
+! Title: tinyMyTerms — PDC-INTENT Agreement
+! Description: Subscribe to this list if you accept the MyTerms PDC-INTENT agreement.
+!              This hides consent dialogs on sites using the PDC-INTENT standard.
+! Homepage: https://github.com/dmarti/tinyMyTerms
+! Standard: https://myterms.info/agreements/PDC-INTENT
+! License: CC0
+!
+! This is an element-hiding rule compatible with uBlock Origin and AdBlock Plus.
+! Sites using tinyMyTerms tag their consent dialogs with class myterms-consent--PDC-INTENT.
+
+##.myterms-consent--PDC-INTENT
