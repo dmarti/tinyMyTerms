@@ -1,0 +1,14 @@
+{
+  "name": "tinyMyTerms Webring",
+  "description": "Sites implementing IEEE 7012-2025 MyTerms via tinyMyTerms",
+  "standard": "https://myterms.info/",
+  "members": [
+    {
+      "name": "AINative Studio",
+      "url": "https://ainative.studio",
+      "wellknown": "https://ainative.studio/.well-known/myterms.json",
+      "agreements": ["SD-BASE", "SD-BASE-DP", "PDC-AI", "PDC-GOOD", "PDC-INTENT"],
+      "joined": "2026-04-27"
+    }
+  ]
+}

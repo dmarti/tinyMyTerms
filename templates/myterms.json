@@ -1,0 +1,11 @@
+{
+  "effective_date": "{{RFC_2822_DATE}}",
+  "agreements": [
+    {
+      "id": "SD-BASE",
+      "url": "https://myterms.info/agreements/SD-BASE"
+    }
+  ],
+  "tos_url": "{{YOUR_TERMS_PAGE_URL}}",
+  "tos": "{{HTML_CONTENT_OF_TERMS_PAGE}}"
+}

@@ -1,0 +1,11 @@
+! Title: tinyMyTerms — SD-BASE-DP Agreement
+! Description: Subscribe to this list if you accept the MyTerms SD-BASE-DP agreement.
+!              This hides consent dialogs on sites using the SD-BASE-DP standard.
+! Homepage: https://github.com/dmarti/tinyMyTerms
+! Standard: https://myterms.info/agreements/SD-BASE-DP
+! License: CC0
+!
+! This is an element-hiding rule compatible with uBlock Origin and AdBlock Plus.
+! Sites using tinyMyTerms tag their consent dialogs with class myterms-consent--SD-BASE-DP.
+
+##.myterms-consent--SD-BASE-DP
