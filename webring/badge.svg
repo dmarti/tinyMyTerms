@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="32" role="img" aria-label="MyTerms Member — IEEE 7012-2025">
+  <title>MyTerms Member</title>
+  <desc>IEEE 7012-2025 compliant site</desc>
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c2330"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="180" height="32" rx="4" fill="url(#bg-grad)"/>
+  <!-- Left accent bar -->
+  <rect width="5" height="32" rx="2" fill="#4b6fed"/>
+  <rect x="3" width="2" height="32" fill="#4b6fed"/>
+  <!-- Main text: MyTerms Member -->
+  <text x="14" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="11" font-weight="700" fill="#e6edf3" dominant-baseline="hanging">
+    MyTerms Member
+  </text>
+  <!-- Sub-text: IEEE 7012-2025 -->
+  <text x="14" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="9" font-weight="400" fill="#8b949e" dominant-baseline="hanging">
+    IEEE 7012-2025
+  </text>
+</svg>

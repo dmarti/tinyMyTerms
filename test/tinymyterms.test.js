@@ -51,7 +51,7 @@ describe('initTinyMyTerms', () => {
 
   describe('when all agreements already accepted in localStorage', () => {
     test('hides the dialog immediately', () => {
-      localStorage.setItem('myterms-accepted-SD-BASE', 'true');
+      localStorage.setItem('myterms-accepted-SD-BASE', '1');
       const dialog = makeDialog(['SD-BASE']);
       dialog.style.display = '';
       initTinyMyTerms();
@@ -59,14 +59,14 @@ describe('initTinyMyTerms', () => {
     });
 
     test('hides multi-agreement dialog when all accepted', () => {
-      AGREEMENTS.forEach(id => localStorage.setItem(`myterms-accepted-${id}`, 'true'));
+      AGREEMENTS.forEach(id => localStorage.setItem(`myterms-accepted-${id}`, '1'));
       const dialog = makeDialog(AGREEMENTS);
       initTinyMyTerms();
       expect(dialog.style.display).toBe('none');
     });
 
     test('keeps dialog visible when only some agreements accepted', () => {
-      localStorage.setItem('myterms-accepted-SD-BASE', 'true');
+      localStorage.setItem('myterms-accepted-SD-BASE', '1');
       const dialog = makeDialog(['SD-BASE', 'PDC-GOOD']);
       dialog.style.display = 'none';
       initTinyMyTerms();
@@ -83,8 +83,8 @@ describe('initTinyMyTerms', () => {
       const btn = dialog.querySelector('.myterms-agree-btn');
       btn.click();
 
-      expect(localStorage.getItem('myterms-accepted-SD-BASE')).toBe('true');
-      expect(localStorage.getItem('myterms-accepted-PDC-GOOD')).toBe('true');
+      expect(localStorage.getItem('myterms-accepted-SD-BASE')).toBe('1');
+      expect(localStorage.getItem('myterms-accepted-PDC-GOOD')).toBe('1');
     });
 
     test('hides dialog after clicking Agree', () => {
@@ -123,7 +123,7 @@ describe('initTinyMyTerms', () => {
 
   describe('multiple dialogs on page', () => {
     test('handles each dialog independently', () => {
-      localStorage.setItem('myterms-accepted-SD-BASE', 'true');
+      localStorage.setItem('myterms-accepted-SD-BASE', '1');
       const d1 = makeDialog(['SD-BASE']);
       const d2 = makeDialog(['PDC-GOOD']);
       d1.style.display = '';

@@ -22,11 +22,11 @@ function agreementsFromElement(el) {
 }
 
 function allAccepted(agreements) {
-  return agreements.every(id => localStorage.getItem(STORAGE_PREFIX + id) === 'true');
+  return agreements.every(id => localStorage.getItem(STORAGE_PREFIX + id) === '1');
 }
 
 function acceptAgreements(agreements) {
-  agreements.forEach(id => localStorage.setItem(STORAGE_PREFIX + id, 'true'));
+  agreements.forEach(id => localStorage.setItem(STORAGE_PREFIX + id, '1'));
 }
 
 function hide(el) {
